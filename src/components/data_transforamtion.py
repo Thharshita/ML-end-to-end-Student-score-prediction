@@ -90,8 +90,8 @@ class DataTransformation:
             input_feature_train_arr=preprocessor_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessor_obj.fit_transform(input_feature_test_df)
 
-            train_arr=np.c_[input_feature_train_arr,np.array(input_feature_train_arr)]
-            test_arr=np.c_[input_feature_test_arr,np.array(input_feature_test_arr)]
+            train_arr=np.c_[input_feature_train_arr,np.array(target_feature_train_df)]
+            test_arr=np.c_[input_feature_test_arr,np.array(target_feature_test_df)]
 
             save_obj(
                 file_path=self.data_transformation_config.preprocesor_obj_file_path,
