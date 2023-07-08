@@ -1,1 +1,1 @@
-This is telecom Churn prediction project
+predict Math subject score
