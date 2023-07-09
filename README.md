@@ -1,1 +1,1 @@
-predict Math subject score
+predict Math subject score from reading and writing score
